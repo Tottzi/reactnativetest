@@ -1,7 +1,7 @@
 import { View, Text, Image, StyleSheet } from 'react-native'
 import React from 'react'
 
-export default function MovieElement(props: any) {
+const MovieElement = (props: any) => {
   const {movie} = props;
   return (
     <View style={styles.container}>
@@ -35,3 +35,5 @@ const styles = StyleSheet.create({
     height: 150,
   },
 });
+
+export default MovieElement;
