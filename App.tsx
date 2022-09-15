@@ -20,6 +20,7 @@ const styles = StyleSheet.create({
     backgroundColor: 'white',
     color: 'black',
     textAlign: 'center',
-    height: '300px'
+    marginTop: 200,
+    maxHeight: 300
   },
 });

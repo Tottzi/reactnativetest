@@ -54,11 +54,12 @@ const styles = StyleSheet.create({
   input: {
    borderColor: 'lightgrey',
    borderStyle: 'solid',
-   borderWidth: '1px',
-   marginTop: '20px'
+   borderWidth: 1,
+   marginTop: 20
   },
   title: {
-    textAlign: 'center'
+    textAlign: 'center',
+    marginTop: 25
   }
 });
 
