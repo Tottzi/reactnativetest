@@ -1,10 +1,18 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View, Platform } from 'react-native';
 import MovieList from './src/components/MovieList/MovieList';
+import MovieListWeb from './src/components/MovieList/MovieList.web';
 
 
 export default function App() {
-  return (
+  return Platform.OS === 'web' ?
+  (
+    <View style={styles.container}>
+      <MovieListWeb />
+      <StatusBar style="auto" />
+    </View>
+  )
+  :(
     <View style={styles.container}>
       <MovieList />
       <StatusBar style="auto" />

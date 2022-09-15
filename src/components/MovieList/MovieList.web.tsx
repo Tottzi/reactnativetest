@@ -34,7 +34,7 @@ const MovieList = () => {
 
   return movies ? (
     <View>
-      <Text>MovieList</Text>
+      <Text>MovieList Web version</Text>
       <ScrollView>
       {movies.map((movie: any) => (
         <View>
@@ -47,7 +47,7 @@ const MovieList = () => {
     </View>
   ) : (
     <View>
-      <Text>MovieList</Text>
+      <Text>MovieList Web version</Text>
       <TextInput style={styles.input} onChangeText={(text) => setText(text)} value={text} placeholder='Title...' />
       <Button title='Fetch' onPress={() => fetchData(text)} />
     </View>
@@ -61,7 +61,7 @@ const styles = StyleSheet.create({
     height: 150,
   },
   input: {
-    borderColor: Platform.OS === 'web' ? 'pink' : 'lightgrey',
+    borderColor: 'lightgrey',
     borderStyle: 'solid',
     borderWidth: 1,
     marginTop: 20,
